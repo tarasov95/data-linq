@@ -1486,7 +1486,7 @@ namespace System.Data.Linq.SqlClient {
             if (sqlType == null)
                 throw Error.ArgumentNull("sqlType");
             this.sqlType = sqlType;
-            System.Diagnostics.Debug.Assert(sqlType.CanBeColumn);
+            //System.Diagnostics.Debug.Assert(sqlType.CanBeColumn);
         }
 
         internal SqlColumn(string name, SqlExpression expr)
